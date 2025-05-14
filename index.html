@@ -10,11 +10,67 @@
       .contentplusbutton{
         gap: 32px;
         margin-top: 48px;
+        margin-bottom: 48px;
       }
 
       .services-section{
-        margin-top: 32px;
+        margin-top: 48px;
+
       }
+
+      .header{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
+        padding-left: 0px;
+      }
+
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 40px;
+      }
+
+      .services > div {
+        flex: 1 1 200px;
+        max-width: 22%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .services img {
+        height: 40px;
+        margin-bottom: 10px;
+      }
+
+      .services h4 {
+        font-weight: 600px;
+        color: #3D0A91;
+        letter-spacing: 0,5px;
+      }
+
+      .services button {
+        margin-top: 10px;
+        background: none;
+        border: 1px solid #4e00d1;
+        color: #4e00d1;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .services button:hover {
+        background-color: #4e00d1;
+        color: white;
+      }
+
+
+      
  
 
       
@@ -74,8 +130,39 @@
     </div>
   </div>
   <div class="container services-section">
-    <H1>Hello</H1>
-    <img  src="Logo.svg" alt="" style="height: 48px;">
+    <div class="container header">
+      <img  src="Logo.svg" alt="" style="height: 48px;">
+      <p class="h2"><b>Designed to help</b></p>
+    </div>
+    <section class="services">
+      <div class="card-1">
+        <img src="icon1.svg" alt="Icon 1">
+        <h4>Brand design</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
+        <button>I need an identity !</button>
+      </div>
+    
+      <div class="card-2">
+        <img src="icon2.svg" alt="Icon 2">
+        <h4>SEO & marketing</h4>
+        <p>Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
+        <button>Make me the first !</button>
+      </div>
+    
+      <div class="card-3">
+        <img src="icon3.svg" alt="Icon 3">
+        <h4>Creative Design</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>I need innovation !</button>
+      </div>
+    
+      <div class="card-4">
+        <img src="icon4.svg" alt="Icon 4">
+        <h4>AI consultant</h4>
+        <p>Mattis tellus. Nullam quis imperdiet augue. Curabitur pellentesque.</p>
+        <button>Let's prompt !</button>
+      </div>
+    </section>
 
 
   </div>
