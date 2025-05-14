@@ -9,43 +9,167 @@
 
 </head>
 <body>
-    <!--3 bouton catégorie-->
-    <div class="btn-group-end" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary">Grandiose creatives</button>
-        <button type="button" class="btn btn-primary">Grandiose writers</button>
-        <button type="button" class="btn btn-primary">Grandiose SEO</button>
-      </div>
+    <style>
+       
+        .card {
+          width: 416px;
+          min-height: 416px;
+          padding: 32px;
+          border-radius: 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+           
+        }
+      
+        .card-title {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 100%;
+          letter-spacing: -2%;
+          width: 352px;
+          height: 96px;
+          margin-top: 1rem;
+          margin-bottom: 0;
+        }
 
+        .card-subtitle {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            width: 76px;
+            height: 28px;
+            margin-bottom: 0.5rem;
+        }
 
-    <!--card à modifier-->
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <span class="badge rounded-pill text-bg-light">Light</span>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <h5 class="card-title">How to sell drugs online, fast</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="card-link">Card link</a>
-          
-        
+        .with-bg {
+            background-image: url('a304fca968348db0f0483a20dcda12c78ea57659.jpg');
+            background-size: contain; /* ou 'contain' selon le cas */
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            
+            
+        }
+
+    
+      </style>
+
+<!--bloc page -->
+    <div class="container mt-4">
+        <!--3 bouton catégorie-->
+        <div class="btn-group-end mb-4 mt-4" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Grandiose creatives</button>
+            <button type="button" class="btn btn-primary">Grandiose writers</button>
+            <button type="button" class="btn btn-primary">Grandiose SEO</button>
         </div>
-      </div>
-    </div>
 
-    <!--chiffre page-->
-    <div class="card">
-        <div class="card-body">
-            <div class="btn-toolbar justify-content-end mb-3" role="toolbar" aria-label="Toolbar with button groups">
-             <div class="btn-group me-2" role="group" aria-label="First group">
-                <button type="button" class="btn btn-outline-secondary">Previous</button>
-                <button type="button" class="btn btn-outline-secondary">1</button>
-                <button type="button" class="btn btn-outline-secondary">2</button>
-                <button type="button" class="btn btn-outline-secondary">3</button>
-                <button type="button" class="btn btn-outline-secondary">Next</button>
+        <!--grid-->
+        <div class="container text-start">
+            <div class="row row-cols-3 row-gap-3">
+
+            <div class="col">
+                <div class="card " >
+                <div class="card-body text-start">
+                <span class="badge rounded-pill text-bg-light">Badges</span>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                <h5 class="card-title">How to sell drugs online, fast</h5>
+                </div>
+                <div>
+                <a href="#" class="card-link">Read</a>
+                </div>
+                
+            </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <div class="card-body text-start">
+                    <span class="badge rounded-pill text-bg-light">Badges</span>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                    <h5 class="card-title">Do what I say, not what I do</h5>
+                    </div>
+                    <div>
+                    <a href="#" class="card-link">Read</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <div class="card-body text-start">
+                    <span class="badge rounded-pill text-bg-light">Badges</span>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                    <h5 class="card-title">Learn by doing, do it now</h5>
+                    </div>
+                    <div>
+                    <a href="#" class="card-link">Read</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <div class="card-body text-start">
+                    <span class="badge rounded-pill text-bg-light">Badges</span>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                    <h5 class="card-title">Looking for a job ? Let others do this for you</h5>
+                    </div>
+                    <div>
+                    <a href="#" class="card-link">Read</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <div class="card-body text-start">
+                    <span class="badge rounded-pill text-bg-light">Badges</span>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                    <h5 class="card-title">Grandiose, the best thing that happened to me</h5>
+                    </div>
+                    <div>
+                    <a href="#" class="card-link">Read</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <div class="card-body text-start">
+                    <span class="badge rounded-pill text-bg-light">Badges</span>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                    <h5 class="card-title">Get a life, get a job, get a dog</h5>
+                    </div>
+                    <div>
+                    <a href="#" class="card-link">Read</a>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        
+
+        <!--chiffre page-->
+        <div class="card1">
+            <div class="card-body mb-4 mt-4">
+                <div class="btn-toolbar justify-content-end mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-outline-secondary">Previous</button>
+                    <button type="button" class="btn btn-outline-secondary">1</button>
+                    <button type="button" class="btn btn-outline-secondary">2</button>
+                    <button type="button" class="btn btn-outline-secondary">3</button>
+                    <button type="button" class="btn btn-outline-secondary">Next</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
 </body>
 </html>
 
