@@ -1,0 +1,24 @@
+:root {
+    --grandiose: #7749F8
+}
+.btn-primary.monbouton {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--grandiose);
+    --bs-btn-border-color: var(--grandiose);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--grandiose);
+    --bs-btn-hover-border-color: var(--grandiose);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--grandiose);
+    --bs-btn-active-border-color: var(--grandiose);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--grandiose);
+    --bs-btn-disabled-border-color: var(--grandiose);
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: var(--grandiose) !important;
+}
