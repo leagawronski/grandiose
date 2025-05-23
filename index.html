@@ -136,7 +136,7 @@
   <div class="container services-section">
     <div class="container header">
       <img  src="Logo.svg" alt="" style="height: 48px;">
-      <p class="h2"><b>Designed to help</b></p>
+      <p class="h2" style="color: #3D0A91;"><b>Designed to help</b></p>
     </div>
     <section class="services">
       <div class="card-1">
@@ -193,41 +193,135 @@
           </div>
         </div>
 
-        <div class="testimonies">
-          <div class="testimony1 d-flex align-items-start gap-3" style="padding: 32px 24px;border-radius: 8px;box-shadow: rgba(0, 0, 0, 0.101);">
+        <!-- Conteneur principal pour aligner les 3 cartes -->
+        <div class="d-flex justify-content-between gap-4" style="gap: 40px;">
+          
+          <!-- Carte 1 -->
+          <div class="testimony1 d-flex align-items-start gap-3" style="flex: 1; padding: 32px 24px; border-radius: 8px; box-shadow: 0px 1px 4px 0px #0000001A; background-color: white;">
             <img src="pp1.jpg" style="height: 64px; border-radius: 32px;">
             <div class="txt">
-              <div class="tag rounded-pill mb-3" style="background-color:#3D0A91; display: inline-block;padding: 4px 8px;font-size: 10px;">
+              <div class="tag rounded-pill mb-3" style="background-color:#3D0A91; display: inline-block; padding: 4px 8px; font-size: 10px;">
                 <p class="m-0 text-white">Happy customer</p>
               </div>
-              <p style="font-size: 12px;font-weight: 400;color: #3D0A91;"> Donec at cras nisl non aenean eget eu nisl nec. Tempor diam malesuada dictum ornare sagittis sit tempus est. Egestas nulla facilisis turpis ornare nisi tortor eget. Ac purus massa nisi blandit ullamcorper sagittis. Penatibus.</p>
+              <p style="font-size: 12px; font-weight: 400; color: #3D0A91;">
+                Donec at cras nisl non aenean eget eu nisl nec. Tempor diam malesuada dictum ornare sagittis sit tempus est. Egestas nulla facilisis turpis ornare nisi tortor eget. Ac purus massa nisi blandit ullamcorper sagittis. Penatibus.              </p>
               <img src="Rating5-5.svg" alt="">
-            </div>
-
             </div>
           </div>
 
-          
+          <!-- Carte 2 -->
+          <div class="testimony2 d-flex align-items-start gap-3" style="flex: 1; padding: 32px 24px; border-radius: 8px; box-shadow: 0px 1px 4px 0px #0000001A; background-color: white;">
+            <img src="pp2.jpg" style="height: 64px; border-radius: 32px;">
+            <div class="txt">
+              <div class="tag rounded-pill mb-3" style="background-color:#3D0A91; display: inline-block; padding: 4px 8px; font-size: 10px;">
+                <p class="m-0 text-white">So Grandiose !</p>
+              </div>
+              <p style="font-size: 12px; font-weight: 400; color: #3D0A91;">
+                Faucibus cras felis porta consectetur dui quis. Bibendum orci lorem elementum euismod aliquet orci eget turpis tellus. Diam cras enim vitae pellentesque viverra sem. Augue consectetur arcu diam odio ornare sed eu.              </p>
+              <img src="Rating4-5.svg" alt="">
+            </div>
+          </div>
 
-          
-
+          <!-- Carte 3 -->
+          <div class="testimony3 d-flex align-items-start gap-3" style="flex: 1; padding: 32px 24px; border-radius: 8px; box-shadow: 0px 1px 4px 0px #0000001A; background-color: white;">
+            <img src="pp3.jpg" style="height: 64px; border-radius: 32px;">
+            <div class="txt">
+              <div class="tag rounded-pill mb-3" style="background-color:#3D0A91; display: inline-block; padding: 4px 8px; font-size: 10px;">
+                <p class="m-0 text-white">So gooood !</p>
+              </div>
+              <p style="font-size: 12px; font-weight: 400; color: #3D0A91;">
+                A morbi volutpat in leo purus. Ac aliquam tristique laoreet nec turpis id tempus id tincidunt. Purus sit non mollis elementum ac nibh faucibus ut enim. Adipiscing eu tortor viverra vivamus commodo tellus. In sit facilisi aliquam.              </p>
+              <img src="Rating3-5.svg" alt="">
+            </div>
+          </div>
 
         </div>
+
       </div>
     </section>
-    
-    
-    
-    
-    
-
-
   </div>
 
+  <div class="container services-section" style="padding-bottom: 48px;">
+    <div class="container header">
+      <img  src="Logo.svg" alt="" style="height: 48px;">
+      <p class="h2" style="color: #3D0A91;"><b>Your questions</b></p>
+    </div>
+
+    <div class="accordion" id="accordionFAQ">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-weight: 600;">
+            What are these Grandiose people ?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body" style="color: #6C757D;font-weight: 400;font-size: 16px;">
+            This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-weight: 600;">
+            You tell me I can hire as many people as I need ?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body" style="color: #6C757D;font-weight: 400;font-size: 16px;">
+            This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-weight: 600;">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+          <div class="accordion-body" style="color: #6C757D;font-weight: 400;font-size: 16px;">
+            This is the third item’s accordion body.It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  <div class="container collaborators">
+    <div class="container header">
+      <img  src="Logo.svg" alt="" style="height: 48px;">
+      <p class="h2" style="color: #3D0A91;"><b>Your questions</b></p>
+    </div>
+    <div class="navbar d-flex justify-content-start" style="gap: 8px;font-weight: 400;">
+      <button type="button" class="btn btn-primary" style="background-color: #5227CC;">Grandiose creatives</button>
+      <button type="button" class="btn btn-primary" style="background-color: #7749F8;">Grandiose writers</button>
+      <button type="button" class="btn btn-primary" style="background-color: #7749F8;">Grandiose SEO</button>
+    </div>
+
+    <div class="d-flex justify-content-between gap-4" style="gap: 40px;">
+          
+      <!-- Carte 1 -->
+      <div class="collaborator1 align-items-start gap-3" style="flex: 1; border-radius: 8px;">
+        <img src="pp1.jpg" style="height: 64px; border-radius: 32px;">
+        <div class="txt">
+          <div class="tag rounded-pill mb-3" style="background-color:#3D0A91; display: inline-block; padding: 4px 8px; font-size: 10px;">
+            <p class="m-0 text-white">Happy customer</p>
+          </div>
+          <p style="font-size: 12px; font-weight: 400; color: #3D0A91;">
+            Donec at cras nisl non aenean eget eu nisl nec. Tempor diam malesuada dictum ornare sagittis sit tempus est. Egestas nulla facilisis turpis ornare nisi tortor eget. Ac purus massa nisi blandit ullamcorper sagittis. Penatibus.              </p>
+        </div>
+      </div>
+
+    
+
+    </div>
+  
+  </div>
 
   
-  </body>
-  </html>
+</body>
+</html>
   
     
 </html>
