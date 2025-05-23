@@ -10,149 +10,253 @@
 </head>
 <body>
     <style>
-       
-        .card {
-          width: 416px;
-          min-height: 416px;
-          padding: 32px;
-          border-radius: 24px;
+              body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-purple {
+            background-color: #6f2cf2;
+        }
+        .text-purple {
+            color: #8540F5;
+        }
+        .btn-purple-light {
+            background-color: #e4d4ff;
+            color: #8540F5;
+            border: none;
+        }
+        .nav-link.active.text-purple {
+                color: #8540F5;
+        }
+        .btn-purple-light:hover {
+            background-color: #d3bfff;
+        }
+        .logo-rotated {
+            transform: rotate(-5deg);
+        }
+        .hero-title {
+            font-size: 4.5rem;
+            line-height: 1;
+        }
+        .hero-subtitle {
+         font-size: 1.3125rem;
+        }
+
+        .btn-category {
+            background-color: #7749F8; /* couleur lavande pâle */
+            color: #ffffff;             /* violet vif pour le texte */
+            border: none;
+            border-radius: 6px;       /* effet "pill" */
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .btn-category-selec {
+            background-color: #5227CC; /* couleur lavande pâle */
+            color: #ffffff;             /* violet vif pour le texte */
+            border: none;
+            border-radius: 6px;       /* effet "pill" */
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+
+
+
+        .card-custom {
+            border-radius: 24px;
+            min-height: 416px;
+            padding: 32px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            z-index: 0;
+        }
+    
+        .card-img-overlay {
+          position: relative;
+          z-index: 1;
+          color: black;
+          padding: 0;
+          height: 100%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-           
         }
-      
-        .card-title {
-          font-family: sans-serif;
-          font-weight: 700;
-          font-size: 40px;
-          line-height: 100%;
-          letter-spacing: -2%;
-          width: 352px;
-          height: 96px;
-          margin-top: 1rem;
-          margin-bottom: 0;
-        }
-
-        .card-subtitle {
-            font-family: sans-serif;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 28px;
-            letter-spacing: 0%;
-            width: 76px;
-            height: 28px;
-            margin-bottom: 0.5rem;
-        }
-
-        .with-bg {
-            background-image: url('a304fca968348db0f0483a20dcda12c78ea57659.jpg');
-            background-size: contain; /* ou 'contain' selon le cas */
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: -1;
-            
-            
-        }
-
     
+        .card-title {
+              font-family: sans-serif;
+              font-weight: 700;
+              font-size: 40px;
+              line-height: 100%;
+              letter-spacing: -2%;
+              width: 352px;
+              height: 144px;
+              margin-top: 1rem;
+              margin-bottom: 0;
+            }
+    
+            .card-subtitle {
+                font-family: sans-serif;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                width: 76px;
+                height: 28px;
+                margin-bottom: 0.5rem;
+            }
+    
+    
+            .card-link-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                align-self: flex-end;
+                font-weight: 500;
+                color: black;
+                text-decoration: underline;
+            }
       </style>
+
+      <!--header-->
+      <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-purple" href="#">GRANDIOSE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Welcome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hire us !</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#">Work</a></li>
+                    <li class="nav-item"><a class="nav-link active text-purple" aria-current="page" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container py-5">
+        <div class="d-flex align-items-center mb-4">
+            <div class="me-3">
+                <img src="logo.svg" alt="Grandiose Logo" class="img-fluid logo-rotated" style="height: 192px; width: 192px;">
+            </div>
+            <div>
+                <h1 class="fw-bold text-dark mb-0 hero-title">They are <span class="text-purple">Grandiose</span></h1>
+                <p class="text-muted small hero-subtitle mb-0">Look at these projects ! Our clients portfolio</p>
+            </div>
+        </div>
 
 <!--bloc page -->
     <div class="container mt-4">
         <!--3 bouton catégorie-->
         <div class="btn-group-end mb-4 mt-4" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary">Grandiose creatives</button>
-            <button type="button" class="btn btn-primary">Grandiose writers</button>
-            <button type="button" class="btn btn-primary">Grandiose SEO</button>
+            <button type="button" class="btn btn-category-selec">Grandiose creatives</button>
+            <button type="button" class="btn btn-category">Grandiose writers</button>
+            <button type="button" class="btn btn-category">Grandiose SEO</button>
         </div>
 
         <!--grid-->
-        <div class="container text-start">
-            <div class="row row-cols-3 row-gap-3">
-
-            <div class="col">
-                <div class="card " >
-                <div class="card-body text-start">
-                <span class="badge rounded-pill text-bg-light">Badges</span>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-                <h5 class="card-title">How to sell drugs online, fast</h5>
-                </div>
-                <div>
-                <a href="#" class="card-link">Read</a>
-                </div>
-                
-            </div>
-            </div>
-            <div class="col">
-                <div class="card " >
-                    <div class="card-body text-start">
-                    <span class="badge rounded-pill text-bg-light">Badges</span>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-                    <h5 class="card-title">Do what I say, not what I do</h5>
-                    </div>
+        <div class="container text-start mt-5">
+            <div class="row g-4">
+          
+              <div class="col-md-4">
+                <div class="card card-custom" style="background-color: #9EC5FE;">
+                  <img src="a304fca968348db0f0483a20dcda12c78ea57659.png" class="card-img" alt="Background image">
+                  <div class="card-img-overlay">
                     <div>
-                    <a href="#" class="card-link">Read</a>
+                      <span class="badge rounded-pill text-bg-light">Badges</span>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                      <h5 class="card-title">How to sell drugs online, fast</h5>
                     </div>
-                    
+                      <div class="card-link-wrapper">
+                          <a href="#" class="card-link">Read</a>
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card " >
-                    <div class="card-body text-start">
-                    <span class="badge rounded-pill text-bg-light">Badges</span>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-                    <h5 class="card-title">Learn by doing, do it now</h5>
-                    </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="card card-custom" style="background-color: #C29FFA;">
+                  <img src="a304fca968348db0f0483a20dcda12c78ea57659.png" class="card-img" alt="Background image">
+                  <div class="card-img-overlay">
                     <div>
+                      <span class="badge rounded-pill text-bg-light">Badges</span>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                      <h5 class="card-title">Do what I say, not what I do</h5>
+                    </div>
                     <a href="#" class="card-link">Read</a>
-                    </div>
-                    
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card " >
-                    <div class="card-body text-start">
-                    <span class="badge rounded-pill text-bg-light">Badges</span>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-                    <h5 class="card-title">Looking for a job ? Let others do this for you</h5>
-                    </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="card card-custom" style="background-color: #EFADCE;">
+                  <img src="a304fca968348db0f0483a20dcda12c78ea57659.png" class="card-img" alt="Background image">
+                  <div class="card-img-overlay">
                     <div>
+                      <span class="badge rounded-pill text-bg-light">Badges</span>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                      <h5 class="card-title">Learn by doing, do it now</h5>
+                    </div>
                     <a href="#" class="card-link">Read</a>
-                    </div>
-                    
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card " >
-                    <div class="card-body text-start">
-                    <span class="badge rounded-pill text-bg-light">Badges</span>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-                    <h5 class="card-title">Grandiose, the best thing that happened to me</h5>
-                    </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="card card-custom" style="background-color: #FECBA1;">
+                  <img src="a304fca968348db0f0483a20dcda12c78ea57659.png" class="card-img" alt="Background image">
+                  <div class="card-img-overlay">
                     <div>
+                      <span class="badge rounded-pill text-bg-light">Badges</span>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                      <h5 class="card-title">Looking for a job ? Let others do this for you</h5>
+                    </div>
                     <a href="#" class="card-link">Read</a>
-                    </div>
-                    
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card " >
-                    <div class="card-body text-start">
-                    <span class="badge rounded-pill text-bg-light">Badges</span>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-                    <h5 class="card-title">Get a life, get a job, get a dog</h5>
-                    </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="card card-custom" style="background-color: #9EC5FE;">
+                  <img src="a304fca968348db0f0483a20dcda12c78ea57659.png" class="card-img" alt="Background image">
+                  <div class="card-img-overlay">
                     <div>
-                    <a href="#" class="card-link">Read</a>
+                      <span class="badge rounded-pill text-bg-light">Badges</span>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                      <h5 class="card-title">Grandiose, the best thing that happened to me</h5>
                     </div>
-                    
+                    <a href="#" class="card-link">Read</a>
+                  </div>
                 </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="card card-custom" style="background-color: #A3CFBB;">
+                  <img src="a304fca968348db0f0483a20dcda12c78ea57659.png" class="card-img" alt="Background image">
+                  <div class="card-img-overlay">
+                    <div>
+                      <span class="badge rounded-pill text-bg-light">Badges</span>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
+                      <h5 class="card-title">Get a life, get a job, get a dog</h5>
+                    </div>
+                    <a href="#" class="card-link">Read</a>
+                  </div>
+                </div>
+              </div>
+          
             </div>
-            </div>
-        </div>
-
-
+          </div>
         
 
         <!--chiffre page-->
@@ -176,29 +280,4 @@
 </body>
 </html>
 
-<!--travaux card-->
 
-<div class="card " >
-    <div class="card-body text-start">
-    <span class="badge rounded-pill text-bg-light">Badges</span>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-    <h5 class="card-title">Grandiose, the best thing that happened to me</h5>
-    </div>
-    <div>
-    <a href="#" class="card-link">Read</a>
-    </div>
-    
-</div>
-
-  <div class="card ">
-        <img src="a304fca968348db0f0483a20dcda12c78ea57659.png" class="card-img" alt="..." style="opacity: 0.2; object-fil: cover; height: 100%;">
-        <div class="card-img-overlay">
-            <div class="card-body text-start">
-                <span class="badge rounded-pill text-bg-light">Badges</span>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Preamble</h6>
-                <h5 class="card-title">Grandiose, the best thing that happened to me</h5>
-                </div>
-                <div>
-                <a href="#" class="card-link">Read</a>
-                </div>
-        </div>
