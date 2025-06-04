@@ -13,8 +13,6 @@
         margin-bottom: 48px;
       }
 
-      /* Texte avec couleur #432874 */
-      .contentplusbutton h1,
       .contentplusbutton p {
         color: #432874;
       }
@@ -73,56 +71,35 @@
         cursor: pointer;
       }
 
-      .services button:hover {
-        background-color: #7749F8;
-        color: white;
-      }
-
-      .bg-purple {
-        background-color: #3D0A91;
-      }
-
-      .text-purple {
-        color: #3D0A91;
-      }
-
       .w-90 {
         width: 90%;
       }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container-fluid">
-        <!-- Brand -->
-        <a class="navbar-brand fw-bold text-primary" style="color: #7B4FFF;" href="#">GRANDIOSE</a>
+  <nav class="navbar navbar-expand-lg bg-white p-nav">
+    <div class="container d-flex justify-content-start align-items-center gap-5">
 
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-primary" aria-current="page" href="#">Welcome</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Hire us !</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-          </ul>
+      <a class="navbar-brand fw-bold"; style="color: #8540F5"; href="/index.html">GRANDIOSE</a>
+      <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+        <li class="nav-item">
+          <a class="nav-link text-secondary"; style="color: #3D0A91"; href="/index.html">Welcome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="/HireUS.html">Hire us !</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"; href="/work.html">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="/blog.html">Blog</a>
+        </li>
+      </ul>
 
-          <!-- Custom alert style -->
-          <div class="alert alert-primary d-flex align-items-center py-1 px-3 mb-0" style="background-color: #7B4FFF; color: white;" role="alert">
-            <div class="me-2">Hey, welcome back to Grandiose !</div>
-            <button type="button" class="btn-close btn-close-white btn-sm ms-2" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-        </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
+    
+   
 
     <div class="container d-flex flex-column contentplusbutton">
       <div class="logo">
@@ -140,16 +117,13 @@
     </div>
     <div class="container services-section">
 
-      <!-- Logo + Titre dans une seule frame avec 24px d'écart -->
       <div class="d-flex flex-column gap-3 align-items-start">
         <img src="Logo.svg" alt="Logo" style="height: 48px;">
         <p class="h2" style="color: #3D0A91;"><b>Designed to help</b></p>
       </div>
     
-      <!-- 4 cartes alignées horizontalement avec 24px de gap -->
       <section class="services d-flex gap-4 my-5">
     
-        <!-- Carte 1 -->
         <div class="card d-flex flex-column align-items-start" style="background-color: white; border: none;">
           <img src="Sunglasses.svg" alt="Icon 1">
           <div class="mt-4 d-flex flex-column gap-3">
@@ -159,7 +133,6 @@
           </div>
         </div>
     
-        <!-- Carte 2 -->
         <div class="card d-flex flex-column align-items-start" style="background-color: white; border: none;">
           <img src="SealCheck.svg" alt="Icon 2">
           <div class="mt-4 d-flex flex-column gap-3">
@@ -169,7 +142,6 @@
           </div>
         </div>
     
-        <!-- Carte 3 -->
         <div class="card d-flex flex-column align-items-start" style="background-color: white; border: none;">
           <img src="Lightning.svg" alt="Icon 3">
           <div class="mt-4 d-flex flex-column gap-3">
@@ -179,7 +151,6 @@
           </div>
         </div>
     
-        <!-- Carte 4 -->
         <div class="card d-flex flex-column align-items-start" style="background-color: white; border: none;">
           <img src="Sparkle.svg" alt="Icon 4">
           <div class="mt-4 d-flex flex-column gap-3">
@@ -194,7 +165,6 @@
     <section class="numbers-section py-5">
       <div class="container">
         
-        <!-- Correct placement of top border -->
         <div class="row row-cols-2 row-cols-md-5 g-4 mb-5" style="border-top: 2px solid #E0CFFC;">
           <div class="col mb-4">
             <h2 class="display-4 fw-semibold" style="color: #3D0A91;">1290</h2>
@@ -218,10 +188,8 @@
           </div>
         </div>
     
-        <!-- Testimony Cards -->
         <div class="row gy-4">
           
-          <!-- Carte 1 -->
           <div class="col-12 col-md-4">
             <div class="d-flex align-items-start gap-3" style="padding: 32px 24px; border-radius: 8px; box-shadow: 0px 1px 4px 0px #0000001A; background-color: white;">
               <img src="pp1.jpg" style="height: 64px; border-radius: 32px;">
@@ -237,7 +205,6 @@
             </div>
           </div>
 
-          <!-- Carte 2 -->
           <div class="col-12 col-md-4">
             <div class="d-flex align-items-start gap-3" style="padding: 32px 24px; border-radius: 8px; box-shadow: 0px 1px 4px 0px #0000001A; background-color: white;">
               <img src="pp2.jpg" style="height: 64px; border-radius: 32px;">
@@ -253,7 +220,6 @@
             </div>
           </div>
 
-          <!-- Carte 3 -->
           <div class="col-12 col-md-4">
             <div class="d-flex align-items-start gap-3" style="padding: 32px 24px; border-radius: 8px; box-shadow: 0px 1px 4px 0px #0000001A; background-color: white;">
               <img src="pp3.jpg" style="height: 64px; border-radius: 32px;">
@@ -274,15 +240,12 @@
       </div>
     </section>
     <div class="container services-section pb-5">
-      <!-- Header: Logo + Titre dans la même frame -->
       <div class="d-flex flex-column gap-3 align-items-start">
         <img src="Logo.svg" alt="Logo" style="height: 48px;">
         <p class="h2" style="color: #3D0A91;"><b>Your questions</b></p>
       </div>
-      <!-- Accordion -->
       <div class="accordion" id="accordionFAQ">
     
-        <!-- Question 1 -->
         <div class="accordion-item mt-4" style="border: 1px solid #CED4DA;">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
@@ -298,7 +261,6 @@
           </div>
         </div>
     
-        <!-- Question 2 -->
         <div class="accordion-item" style="border: 1px solid #CED4DA;">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
@@ -314,7 +276,6 @@
           </div>
         </div>
     
-        <!-- Question 3 -->
         <div class="accordion-item" style="border: 1px solid #CED4DA;">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
@@ -334,22 +295,18 @@
     </div>
 
     <div class="container collaborators py-5">
-      <!-- Header with logo and title aligned -->
       <div class="d-flex align-items-center mb-4" style="gap: 16px;">
         <img src="Logo.svg" alt="Logo" style="height: 48px;">
         <p class="h2 m-0" style="color: #3D0A91;"><b>Discover our latest Grandiose collaborators</b></p>
       </div>
     
-      <!-- Nav buttons -->
       <div class="navbar d-flex justify-content-start mb-5" style="gap: 8px; font-weight: 400;">
         <button type="button" class="btn btn-primary" style="background-color: #5227CC;">Grandiose creatives</button>
         <button type="button" class="btn btn-primary" style="background-color: #7749F8;">Grandiose writers</button>
         <button type="button" class="btn btn-primary" style="background-color: #7749F8;">Grandiose SEO</button>
       </div>
     
-      <!-- Collaborator Cards -->
       <div class="row g-4">
-        <!-- Collaborator Card -->
         <div class="col-12 col-md-6 col-lg-3">
           <div class="p-3" style="border-radius: 8px;">
             <img src="CropPP1.png" class="w-100 mb-3" style="border-radius: 32px;" alt="Nathaniel Faraday">
@@ -365,7 +322,6 @@
           </div>
         </div>
     
-        <!-- Collaborator 2 -->
         <div class="col-12 col-md-6 col-lg-3">
           <div class="p-3" style="border-radius: 8px;">
             <img src="CropPP2.png" class="w-100 mb-3" style="border-radius: 32px;" alt="Natiah Delonghi">
@@ -381,7 +337,6 @@
           </div>
         </div>
     
-        <!-- Collaborator 3 -->
         <div class="col-12 col-md-6 col-lg-3">
           <div class="p-3" style="border-radius: 8px;">
             <img src="CropPP3.png" class="w-100 mb-3" style="border-radius: 32px;" alt="Nathalia Erzigova">
@@ -397,7 +352,6 @@
           </div>
         </div>
     
-        <!-- Collaborator 4 -->
         <div class="col-12 col-md-6 col-lg-3">
           <div class="p-3" style="border-radius: 8px;">
             <img src="CropPP4.png" class="w-100 mb-3" style="border-radius: 32px;" alt="Albaneta Duchamp">
@@ -416,13 +370,10 @@
     </div>
     <footer class="position-relative bg-transparent" style="height: 454px;">
 
-      <!-- Fond violet foncé -->
       <div class="position-absolute bottom-0 start-0 w-100" style="height: 322px; background-color: #3D0A91;"></div>
     
-      <!-- Carte blanche par-dessus -->
       <div class="position-absolute top-0 start-50 translate-middle-x bg-white d-flex flex-column align-items-start" style="width: 90%; max-width: 1200px; height: 374px; border-radius: 16px; padding: 72px 64px; gap: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
         
-        <!-- Logo et bouton en colonne -->
         <div class="d-flex flex-column align-items-start gap-3">
           <img src="Logo.svg" alt="Grandiose logo" style="height: 48px;">
           <button class="btn btn-primary border-0" style="padding: 16px 24px; background-color: #7749F8;">
@@ -430,7 +381,6 @@
           </button>
         </div>
     
-        <!-- Infos des bureaux -->
         <div class="row w-100">
           <div class="col-12 col-md-6 mb-3">
             <h5 class="fw-bold" style="color: #520DC2;">New York Office</h5>
